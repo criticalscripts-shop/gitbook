@@ -39,7 +39,7 @@ ensure cs-stream
 {% endcode %}
 
 {% hint style="warning" %}
-If you choose not to use it you will have to change the default configuration as the default spotlight object is an addon and the default screen for some locations is from **The Cayo Perico Heist DLC** which your server may not be on.
+If you choose not to use it you will have to change the default configuration as the default spotlight object is an addon and the default screen for some locations is from **The Cayo Perico Heist** DLC which your server may not be on.
 {% endhint %}
 {% endstep %}
 
