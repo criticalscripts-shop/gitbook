@@ -18,8 +18,7 @@ You can set the following ConVars in your server's configuration file using `set
 
 
 
-* \
-  `cs_hashed_events_client_whitelist`
+* `cs_hashed_events_client_whitelist`
   * A comma-separated list of client events that should be allowed to pass without hashing, for non-Lua resources.
 
 
