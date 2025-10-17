@@ -14,7 +14,7 @@ Download `cs-hashed-events` and place it in your `resources` folder.
 {% step %}
 ### Ensure the resource
 
-Add `ensure cs-hashed-events` to your server's configuration file before any other ensure.
+Add `ensure cs-hashed-events` to your server's configuration file **before any other ensure**.
 {% endstep %}
 
 {% step %}
@@ -30,7 +30,7 @@ shared_script '@cs-hashed-events/include.lua'
 {% step %}
 ### Adjust configuration
 
-Adjust the resource configuration via its `config.lua` file and ConVars.
+Adjust the resource configuration via its `config.lua` file and [ConVars](convars.md).
 {% endstep %}
 
 {% step %}

@@ -4,4 +4,41 @@ description: Learn how to use an external hosting server.
 
 # External Hosting Server
 
-If you choose not to use the integrated proxy server then [download the external node.js application](https://github.com/criticalscripts-shop/cs-stories-ehs) and install it with `npm install`. Read through all options and their comments inside its `config.js` file as they are very important for the setup process, adjust them to your setup and preferences and then run it with `node`. Then make sure to add the external server's IP address in the `sv_proxyIPRanges` property in your server's configuration file. You can use [pm2](https://pm2.keymetrics.io/docs/usage/quick-start/) to make sure it runs all the time.
+{% hint style="warning" %}
+This is intended only for experienced developers.
+{% endhint %}
+
+If you choose not to use the integrated hosting server you can self-host an external hosting server.\
+To do so, follow the instructions below.
+
+{% stepper %}
+{% step %}
+### Download
+
+Download the external proxy server through our [GitHub](https://github.com/criticalscripts-shop/cs-stories-ehs).
+{% endstep %}
+
+{% step %}
+### Install
+
+Run `npm install` in the EHS[^1] directory and wait until it completes.
+{% endstep %}
+
+{% step %}
+### Configure
+
+Read through all options and their comments inside its `config.js` file as they are very important for the setup process, adjust them to your setup and preferences.
+{% endstep %}
+
+{% step %}
+### Run
+
+Run `node server.js` in the EHS[^1] directory and **do not close the console window**.
+
+{% hint style="info" %}
+You can use [pm2](https://pm2.keymetrics.io/docs/usage/quick-start/) to make sure the EHS[^1] runs all the time.
+{% endhint %}
+{% endstep %}
+{% endstepper %}
+
+[^1]: External Hosting Server

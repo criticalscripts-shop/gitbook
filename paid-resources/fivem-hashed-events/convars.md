@@ -25,4 +25,4 @@ You can set the following ConVars in your server's configuration file using `set
 
 
 * `cs_hashed_events_emojify`
-  * Whether you want the event hashing to be emoji-based, this will cause the events to show up as ?????? in the network event log.
+  * Whether you want the event hashing to be emoji-based, this will cause the events to show up as question marks in the network event log.
