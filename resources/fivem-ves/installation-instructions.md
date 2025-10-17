@@ -1,3 +1,7 @@
+---
+description: Learn how to install the resource.
+---
+
 # Installation Instructions
 
 {% stepper %}
@@ -8,6 +12,8 @@ Download `cs-ves` from your keymaster and place it in your `resources` folder.
 {% endstep %}
 
 {% step %}
+### Ensure the resource
+
 Add the following to your server configuration:
 
 {% code title="server.cfg" %}
@@ -18,19 +24,33 @@ ensure cs-ves
 {% endstep %}
 
 {% step %}
-Add Ace permission for admin access to the /ves command (this can be changed via integration files):
+### Setup Ace permission
 
-```
+Add this to your server configuration so Ace admins can access the `/ves` command:
+
+```txt
 add_ace group.admin cs-ves.control allow
 ```
+
+{% hint style="info" %}
+This check can be changed by modifying **`cs-hall/lntegration/server.lua`**.
+{% endhint %}
 {% endstep %}
 
 {% step %}
-Check and adjust the _**config.lua**_ file inside _**cs-ves**_ to enable the vehicle models you want to be available.
+### Configure vehicles
+
+Open `config.lua` inside `cs-ves` and enable the entries for the vehicle models you want the VES to be available.&#x20;
+
+{% hint style="info" %}
+You can find more vehicle models in our [extra-hac GitHub](https://github.com/criticalscripts-shop/extra-hac/tree/main/cs-ves/entries) and in our [Discord](https://criticalscripts.shop/discord) community.
+{% endhint %}
 {% endstep %}
 
 {% step %}
-Run:
+### Start the resource
+
+Run the following commands on the server console:
 
 ```
 refresh

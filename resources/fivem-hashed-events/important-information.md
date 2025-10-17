@@ -1,3 +1,7 @@
+---
+description: Learn important information about the resource.
+---
+
 # Important Information
 
 * By default the resource whitelists internal events, game events, txAdmin and vMenu events.
@@ -9,4 +13,3 @@
   * It does not guarantee secrecy of event names under targeted analysis.
   * It does not replace proper server-side validation, permissions, or rate limiting.
 * Use this as one layer in a defense-in-depth strategy, not a remedy for all modder problems.
-

@@ -1,3 +1,7 @@
+---
+description: Learn how to add and use expansions.
+---
+
 # Expansions
 
 `cs-hall` does **NOT** support any streaming services by default, out-of-the-box you can only queue URLs with embeddable video elements (e.g. self-hosted). In addition to that you may use controllers' expansions to expand on the supported media sources at your own risk and discretion, you can find more in our [extra-hac GitHub](https://github.com/criticalscripts-shop/extra-hac/tree/main/cs-hall/controllers) and in our [Discord](https://criticalscripts.shop/discord) community.&#x20;

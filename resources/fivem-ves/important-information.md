@@ -1,3 +1,7 @@
+---
+description: Learn important information about the resource.
+---
+
 # Important Information
 
 * The resource is optimized with range synchronization and assets are loaded only when the player is around an active vehicle.

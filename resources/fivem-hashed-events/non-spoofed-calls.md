@@ -1,7 +1,10 @@
+---
+description: Learn how to listen to the non-spoofed call event.
+---
+
 # Non-Spoofed Calls
 
-You can listen to the following server event for when a non-spoofed call is detected.
-
+You can listen to the following server event for when a non-spoofed call is detected.\
 A non-spoofed call is a hashed event triggered using its original (pre-hash) name.
 
 ```lua

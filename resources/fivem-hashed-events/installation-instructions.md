@@ -1,3 +1,7 @@
+---
+description: Learn how to install the resource.
+---
+
 # Installation Instructions
 
 {% stepper %}

@@ -1,3 +1,7 @@
+---
+description: Learn important information about the resource.
+---
+
 # Important Information
 
 * The player will be asked for microphone approval, if they deny, their voice will not be recorded in stories. If they mistakenly deny, they will need to reset it (for now this is done by deleting the file `%AppData%\CitizenFX\media_access.json`).

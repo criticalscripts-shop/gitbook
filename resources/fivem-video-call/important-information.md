@@ -1,3 +1,7 @@
+---
+description: Learn important information about the resource.
+---
+
 # Important Information
 
 * The video call will not work without the proxy server, direct P2P is not given as an option in order to protect players' anonymity.
