@@ -6,14 +6,14 @@ description: Learn how to install the resource.
 
 {% stepper %}
 {% step %}
-### Download & Place
+### Download the resource
 
 * Make sure you have [yarn](https://github.com/citizenfx/cfx-server-data/tree/master/resources/\[system]/\[builders]/yarn) in your `resources` folder.
 * Download `cs-stories` and place it in your `resources` folder.
 {% endstep %}
 
 {% step %}
-### Enable the resource
+### Ensure the resource
 
 * Add `ensure cs-stories` to your server's configuration file before ensuring your phone.
 {% endstep %}

@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Welcome](README.md)
+* [Knowledge Base](README.md)
 
 ## Paid Resources
 

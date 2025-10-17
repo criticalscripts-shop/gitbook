@@ -6,67 +6,36 @@ description: Learn how to install the resource.
 
 {% stepper %}
 {% step %}
-### Prepare yarn dependency
+### Download the resource
 
-Make sure you have [**yarn**](https://github.com/citizenfx/cfx-server-data/tree/master/resources/\[system]/\[builders]/yarn) in your _**resources**_ folder.
-{% endstep %}
-
-{% step %}
-### Place resource in resources folder
-
-Download _**cs-video-call**_ and place it in your _**resources**_ folder.
+Download `cs-hashed-events` and place it in your `resources` folder.
 {% endstep %}
 
 {% step %}
 ### Ensure the resource
 
-Add the following line to your server's configuration file before ensuring your phone:
-
-ensure cs-video-call
+Add `ensure cs-hashed-events` to your server's configuration file before any other ensure.
 {% endstep %}
 
 {% step %}
-### Add hooks to phone resource files
+### Include in Lua resources
 
-Edit your phone's _**\_\_resource.lua**_ or _**fxmanifest.lua**_ file and add the following:
+Edit the `fxmanifest.lua` file of every resource in your server that executes Lua scripts and add:
 
-* As the last client script: '@cs-video-call/client/hooks/core.lua'
-* As the last server script: '@cs-video-call/server/hooks/core.lua'
+```lua
+shared_script '@cs-hashed-events/include.lua'
+```
 {% endstep %}
 
 {% step %}
-### Add NUI script to phone
+### Adjust configuration
 
-Edit your phone's NUI file (usually _**index.html**_) and add this before :
+Adjust the resource configuration via its `config.lua` file and ConVars.
 {% endstep %}
 
 {% step %}
-### Configure cs-video-call
+### Restart server
 
-Check the _**config.lua**_ file inside _**cs-video-call**_ for further configuration and read through all options and their comments as some are very important for the setup process. Adjust them to your setup and preferences.
-{% endstep %}
-
-{% step %}
-### Open required UDP port (internal solution)
-
-Given you're using the internal solution, open the **required port** (by default **34540**; **incoming** - **inbound**) in your firewall on **UDP** protocol.
-{% endstep %}
-
-{% step %}
-### Refresh and ensure
-
-Run the command refresh and the command ensure cs-video-call and wait until **yarn** finishes the installation.
-{% endstep %}
-
-{% step %}
-### Prevent animation glitch (if needed)
-
-If your phone uses an animation loop you may need to edit it (usually found in an **animation.lua** file) and add a not CS\_VIDEO\_CALL.ACTIVE check before playing an animation to ensure an animation glitch does not occur when the video call camera is opened.
-{% endstep %}
-
-{% step %}
-### Final step
-
-Ensure your phone.
+Restart your server.
 {% endstep %}
 {% endstepper %}

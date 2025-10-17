@@ -1,4 +1,5 @@
 ---
+description: Learn how to install the resource.
 layout:
   width: default
   title:
