@@ -7,6 +7,7 @@
 * [FiveM Hall](resources/fivem-hall/README.md)
   * [Installation Instructions](resources/fivem-hall/installation-instructions.md)
   * [Important Information](resources/fivem-hall/important-information.md)
+  * [Expansions](resources/fivem-hall/expansions.md)
 * [FiveM VES](resources/fivem-ves/README.md)
   * [Installation Instructions](resources/fivem-ves/installation-instructions.md)
   * [Important Information](resources/fivem-ves/important-information.md)

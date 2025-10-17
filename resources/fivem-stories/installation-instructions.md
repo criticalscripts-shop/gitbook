@@ -2,7 +2,7 @@
 
 {% stepper %}
 {% step %}
-### Preparation
+### Download & Place
 
 * Make sure you have [yarn](https://github.com/citizenfx/cfx-server-data/tree/master/resources/\[system]/\[builders]/yarn) in your `resources` folder.
 * Download `cs-stories` and place it in your `resources` folder.

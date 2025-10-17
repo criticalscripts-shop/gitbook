@@ -2,9 +2,9 @@
 
 {% stepper %}
 {% step %}
-### Download and place resource
+### Download the resource
 
-Download _**cs-ves**_ and place it in your _**resources**_ folder.
+Download `cs-ves` from your keymaster and place it in your `resources` folder.
 {% endstep %}
 
 {% step %}
