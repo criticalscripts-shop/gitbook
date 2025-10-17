@@ -77,7 +77,9 @@ This is optional and you don't need to do anything unless you are experiencing a
 {% endhint %}
 
 If your phone uses an animation loop you may need to edit it (usually found in an `animation.lua` file) and add a `not CS_VIDEO_CALL.ACTIVE` check before playing an animation to ensure an animation glitch does not occur when the video call camera is opened.
+{% endstep %}
 
+{% step %}
 ### Restart your phone
 
 Ensure your phone's resource via your server's console.
