@@ -15,48 +15,74 @@ description: Learn how to install the resource.
 {% step %}
 ### Ensure the resource
 
-* Add `ensure cs-stories` to your server's configuration file before ensuring your phone.
+Add `ensure cs-stories` to your server's configuration file before ensuring your phone.
 {% endstep %}
 
 {% step %}
-### Hook the phone resource
+### Hook your phone's resource
 
-* Edit your phone's `__resource.lua` or `fxmanifest.lua` file and add `@cs-stories/client/hooks/core.lua` as the last client script and `@cs-stories/server/hooks/core.lua` as the last server script.
+Edit your phone's `fxmanifest.lua` file and add the following at the end of of the file:
+
+{% code title="fxmanifest.lua" %}
+```
+client_script '@cs-stories/client/hooks/core.lua'
+server_script '@cs-stories/server/hooks/core.lua'
+```
+{% endcode %}
 {% endstep %}
 
 {% step %}
-### Add the NUI script
+### Hook your phone's NUI
 
-* Edit your phone's NUI file (usually `index.html`) and add: right before `</body>`.
+Edit your phone's NUI file (usually `index.html`) and add the following right before the `</body>` tag:
+
+```
+<script type="text/javascript" src="nui://cs-stories/client/hooks/core.js"></script>
+```
 {% endstep %}
 
 {% step %}
 ### Configure
 
-* Check the `config.lua` file inside `cs-stories` for further configuration. Read through all options and their comments and adjust them to your setup and preferences.
+Check the `config.lua` file inside `cs-stories` for further configuration. Read through all options and their comments and adjust them to your setup and preferences.
 {% endstep %}
 
 {% step %}
-### Firewall / Port
+### Setup your server's firewall
 
-* Given you're using the internal solution, open the required port (by default `35540`; incoming/inbound) in your firewall on TCP protocol.
+Open the required port (by default `35540`; incoming / inbound) in your firewall, on `TCP` protocol.
+
+{% hint style="info" %}
+If you are having issues getting a port open, you can use an [External Hosting Server](external-hosting-server.md).
+{% endhint %}
 {% endstep %}
 
 {% step %}
 ### Start the resource
 
-* Run the command `refresh` and then `ensure cs-stories`.
+Run the following commands on the server console:
+
+{% code title="FiveM Server Console" %}
+```
+refresh
+ensure cs-stories
+```
+{% endcode %}
 {% endstep %}
 
 {% step %}
-### Animation loop fix (if needed)
+### Fix your phone's animation loop
 
-* If your phone uses an animation loop you may need to edit it (usually found in an `animation.lua` file) and add a `not CS_STORIES.ACTIVE` check before playing an animation to ensure an animation glitch does not occur when the video call camera is opened.
+{% hint style="warning" %}
+This is optional and you don't need to do anything unless you are experiencing an animation glitch.
+{% endhint %}
+
+If your phone uses an animation loop you may need to edit it (usually found in an `animation.lua` file) and add a `not CS_STORIES.ACTIVE` check before playing an animation to ensure an animation glitch does not occur when the stories camera is opened.
 {% endstep %}
 
 {% step %}
-### Final check
+### Restart your phone
 
-* Ensure your phone.
+Ensure your phone's resource via your server's console.
 {% endstep %}
 {% endstepper %}

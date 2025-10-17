@@ -77,7 +77,7 @@ This check can be changed by modifying **`cs-hall/lntegration/server.lua`**.
 Open `config.lua` inside `cs-hall` and enable the entries for the locations you want the hall to be available.&#x20;
 
 {% hint style="info" %}
-You can find more locations in our [extra-hac GitHub](https://github.com/criticalscripts-shop/extra-hac/tree/main/cs-hall/controllers) and in our [Discord](https://criticalscripts.shop/discord) community.
+You can find more locations in our [`extra-hac` GitHub](https://github.com/criticalscripts-shop/extra-hac/tree/main/cs-hall/controllers) and in our [Discord](https://criticalscripts.shop/discord) community.
 {% endhint %}
 {% endstep %}
 

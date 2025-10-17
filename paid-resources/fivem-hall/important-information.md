@@ -7,7 +7,7 @@ description: Learn important information about the resource.
 * The resource is optimized with range synchronization and assets are loaded only when the player is around an active location.
 * Very low-spec computers may experience a more downgraded experience.
 * If you want to ensure the resource, you are advised to stop the playback in all active locations first to avoid crashes.
-* The default configuration requires the _**cs-stream**_ resource which can be [downloaded here](https://github.com/criticalscripts-shop/cs-stream), started before `cs-hall` resource.
+* The default configuration requires the `cs-stream` resource which can be [downloaded here](https://github.com/criticalscripts-shop/cs-stream), started before `cs-hall` resource.
 * In the most default configured entries, adjusting the content time for buffering and syncing is turned off as it is not mandatory for a great experience. This feature is complicated and may not always work as intended, therefore it is advised to enable it only in time-critical content (e.g., a cinema).
 * Some triangle / black textures may appear in monitors when there are a lot of players around, that seems to be a game texture bug.
 * Minor crackling may be audible on certain songs when the camera is moved due to limitations imposed upon spatial audio.

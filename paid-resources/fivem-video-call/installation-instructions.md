@@ -9,59 +9,77 @@ description: Learn how to install the resource.
 ### Download the resource
 
 * Make sure you have [yarn](https://github.com/citizenfx/cfx-server-data/tree/master/resources/\[system]/\[builders]/yarn) in your `resources` folder.
-* Download `cs-stories` and place it in your `resources` folder.
+* Download `cs-video-call` and place it in your `resources` folder.
 {% endstep %}
 
 {% step %}
 ### Ensure the resource
 
-Add the following line to your server's configuration file before ensuring your phone:
+Add `ensure cs-video-call` to your server's configuration file before ensuring your phone.
+{% endstep %}
 
+{% step %}
+### Hook your phone's resource
+
+Edit your phone's `fxmanifest.lua` file and add the following at the end of of the file:
+
+{% code title="fxmanifest.lua" %}
+```
+client_script '@cs-video-call/client/hooks/core.lua'
+server_script '@cs-video-call/server/hooks/core.lua'
+```
+{% endcode %}
+{% endstep %}
+
+{% step %}
+### Hook your phone's NUI
+
+Edit your phone's NUI file (usually `index.html`) and add the following right before the `</body>` tag:
+
+<pre><code><strong>&#x3C;script type="text/javascript" src="nui://cs-video-call/client/hooks/core.js">&#x3C;/script>
+</strong></code></pre>
+{% endstep %}
+
+{% step %}
+### Configure
+
+Check the `config.lua` file inside `cs-video-call` for further configuration. Read through all options and their comments and adjust them to your setup and preferences.
+{% endstep %}
+
+{% step %}
+### Setup your server's firewall
+
+Open the required port (by default `34540`; incoming / inbound) in your firewall, on `UDP` protocol.
+
+{% hint style="info" %}
+If you are having issues getting a port open, you can use an [External Proxy Server](external-proxy-server.md).
+{% endhint %}
+{% endstep %}
+
+{% step %}
+### Start the resource
+
+Run the following commands on the server console:
+
+{% code title="FiveM Server Console" %}
+```
+refresh
 ensure cs-video-call
+```
+{% endcode %}
 {% endstep %}
 
 {% step %}
-### Add hooks to phone resource files
+### Fix your phone's animation loop
 
-Edit your phone's _**\_\_resource.lua**_ or _**fxmanifest.lua**_ file and add the following:
+{% hint style="warning" %}
+This is optional and you don't need to do anything unless you are experiencing an animation glitch.
+{% endhint %}
 
-* As the last client script: '@cs-video-call/client/hooks/core.lua'
-* As the last server script: '@cs-video-call/server/hooks/core.lua'
-{% endstep %}
+If your phone uses an animation loop you may need to edit it (usually found in an `animation.lua` file) and add a `not CS_VIDEO_CALL.ACTIVE` check before playing an animation to ensure an animation glitch does not occur when the video call camera is opened.
 
-{% step %}
-### Add NUI script to phone
+### Restart your phone
 
-Edit your phone's NUI file (usually _**index.html**_) and add this before :
-{% endstep %}
-
-{% step %}
-### Configure cs-video-call
-
-Check the _**config.lua**_ file inside _**cs-video-call**_ for further configuration and read through all options and their comments as some are very important for the setup process. Adjust them to your setup and preferences.
-{% endstep %}
-
-{% step %}
-### Open required UDP port (internal solution)
-
-Given you're using the internal solution, open the **required port** (by default **34540**; **incoming** - **inbound**) in your firewall on **UDP** protocol.
-{% endstep %}
-
-{% step %}
-### Refresh and ensure
-
-Run the command refresh and the command ensure cs-video-call and wait until **yarn** finishes the installation.
-{% endstep %}
-
-{% step %}
-### Prevent animation glitch (if needed)
-
-If your phone uses an animation loop you may need to edit it (usually found in an **animation.lua** file) and add a not CS\_VIDEO\_CALL.ACTIVE check before playing an animation to ensure an animation glitch does not occur when the video call camera is opened.
-{% endstep %}
-
-{% step %}
-### Final step
-
-Ensure your phone.
+Ensure your phone's resource via your server's console.
 {% endstep %}
 {% endstepper %}

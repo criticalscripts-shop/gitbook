@@ -45,7 +45,7 @@ This check can be changed by modifying **`cs-hall/lntegration/server.lua`**.
 Open `config.lua` inside `cs-ves` and enable the entries for the vehicle models you want the VES to be available.&#x20;
 
 {% hint style="info" %}
-You can find more vehicle models in our [extra-hac GitHub](https://github.com/criticalscripts-shop/extra-hac/tree/main/cs-ves/entries) and in our [Discord](https://criticalscripts.shop/discord) community.
+You can find more vehicle models in our [`extra-hac` GitHub](https://github.com/criticalscripts-shop/extra-hac/tree/main/cs-ves/entries) and in our [Discord](https://criticalscripts.shop/discord) community.
 {% endhint %}
 {% endstep %}
 
