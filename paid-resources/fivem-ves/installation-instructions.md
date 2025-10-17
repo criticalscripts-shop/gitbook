@@ -37,6 +37,8 @@ add_ace group.admin cs-ves.control allow
 {% hint style="info" %}
 This check can be changed by modifying **`cs-hall/lntegration/server.lua`**.
 {% endhint %}
+
+Alternatively, read more about permissions [here](permissions.md).
 {% endstep %}
 
 {% step %}
