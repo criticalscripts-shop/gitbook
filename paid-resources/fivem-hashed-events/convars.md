@@ -4,7 +4,7 @@ description: Learn how to configure the resource via console variables.
 
 # ConVars
 
-You can set the following ConVars in your server's configuration file using `setr` (e.g. `setr s_hashed_events_enabled true`).
+You can set the following ConVars in your server's configuration file using `setr` (e.g. `setr cs_hashed_events_enabled true`).
 
 
 
