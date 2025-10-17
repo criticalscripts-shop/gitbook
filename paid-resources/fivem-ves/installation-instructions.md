@@ -28,9 +28,11 @@ ensure cs-ves
 
 Add this to your server configuration so Ace admins can access the `/ves` command:
 
+{% code title="server.cfg" %}
 ```txt
 add_ace group.admin cs-ves.control allow
 ```
+{% endcode %}
 
 {% hint style="info" %}
 This check can be changed by modifying **`cs-hall/lntegration/server.lua`**.
@@ -52,9 +54,11 @@ You can find more vehicle models in our [extra-hac GitHub](https://github.com/cr
 
 Run the following commands on the server console:
 
+{% code title="FiveM Server Console" %}
 ```
 refresh
 ensure cs-ves
 ```
+{% endcode %}
 {% endstep %}
 {% endstepper %}

@@ -32,9 +32,11 @@ Download `cs-stream` from: [https://github.com/criticalscripts-shop/cs-stream](h
 
 Place it in your `resources` folder and add the following to your server configuration file:
 
+{% code title="server.cfg" %}
 ```txt
 ensure cs-stream
 ```
+{% endcode %}
 
 {% hint style="warning" %}
 If you choose not to use it you will have to change the default configuration as the default spotlight object is an addon and the default screen for some locations is from The Cayo Perico Heist DLC which your server may not be on.
@@ -46,9 +48,11 @@ If you choose not to use it you will have to change the default configuration as
 
 Add the following to your server configuration file:
 
+{% code title="server.cfg" %}
 ```txt
 ensure cs-hall
 ```
+{% endcode %}
 {% endstep %}
 
 {% step %}
@@ -56,9 +60,11 @@ ensure cs-hall
 
 Add this to your server configuration so Ace admins can access the `/hall` command:
 
+{% code title="server.cfg" %}
 ```txt
 add_ace group.admin cs-hall.control allow
 ```
+{% endcode %}
 
 {% hint style="info" %}
 This check can be changed by modifying **`cs-hall/lntegration/server.lua`**.
@@ -80,10 +86,12 @@ You can find more locations in our [extra-hac GitHub](https://github.com/critica
 
 Run the following commands on the server console:
 
+{% code title="FiveM Server Console" %}
 ```txt
 refresh
 ensure cs-hall
 ```
+{% endcode %}
 {% endstep %}
 {% endstepper %}
 

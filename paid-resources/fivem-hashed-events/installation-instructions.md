@@ -22,9 +22,11 @@ Add `ensure cs-hashed-events` to your server's configuration file **before any o
 
 Edit the `fxmanifest.lua` file of every resource in your server that executes Lua scripts and add:
 
+{% code title="fxmanifest.lua" %}
 ```lua
 shared_script '@cs-hashed-events/include.lua'
 ```
+{% endcode %}
 {% endstep %}
 
 {% step %}
