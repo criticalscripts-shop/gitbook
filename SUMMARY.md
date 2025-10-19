@@ -13,6 +13,7 @@
   * [Installation Instructions](paid-resources/fivem-ves/installation-instructions.md)
   * [Permissions](paid-resources/fivem-ves/permissions.md)
   * [Important Information](paid-resources/fivem-ves/important-information.md)
+  * [Expansions](paid-resources/fivem-ves/expansions.md)
 * [FiveM Video Call](paid-resources/fivem-video-call/README.md)
   * [Installation Instructions](paid-resources/fivem-video-call/installation-instructions.md)
   * [Important Information](paid-resources/fivem-video-call/important-information.md)
