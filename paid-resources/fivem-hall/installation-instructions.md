@@ -1,19 +1,5 @@
 ---
 description: Learn how to install the resource.
-layout:
-  width: default
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
-  metadata:
-    visible: true
 ---
 
 # Installation Instructions
@@ -79,7 +65,7 @@ Alternatively, read more about permissions [here](permissions.md).
 Open `config.lua` inside `cs-hall` and enable the entries for the locations you want the hall to be available.&#x20;
 
 {% hint style="info" %}
-You can find more locations in our [`extra-hac` GitHub](https://github.com/criticalscripts-shop/extra-hac/tree/main/cs-hall/controllers) and in our [Discord](https://criticalscripts.shop/discord) community.
+You can find more locations in our [`extra-hac` GitHub](https://github.com/criticalscripts-shop/extra-hac/tree/main/cs-hall/entries) and in our [Discord](https://criticalscripts.shop/discord) community.
 {% endhint %}
 {% endstep %}
 
